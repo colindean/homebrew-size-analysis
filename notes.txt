@@ -1,0 +1,4 @@
+Setup HAProxy as a reverse proxy that can keep connections alive versus curl opening a new connection every time?
+
+https://www.haproxy.com/blog/http-keep-alive-pipelining-multiplexing-and-connection-pooling/
+
