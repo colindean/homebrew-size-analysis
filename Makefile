@@ -19,7 +19,7 @@ urls: formula.json
 		printf "%s" "$${url}" > "$${file}"; \
 	done
 
-CURL_OPTS = --disable --cookie /dev/null --globoff --show-error --user-agent "homebrew-pkg-size-analysis/0.0.1" --retry 3 --header "Authorization: Bearer QQ==" --fail --location --head
+CURL_OPTS = --disable --cookie /dev/null --globoff --show-error --user-agent "homebrew-pkg-size-analysis/0.0.1" --retry 3 --header "Authorization: Bearer QQ==" --fail --location --silent --head
 
 %.response: %.url
 	curl $(CURL_OPTS) --output $@ "$(shell cat $<)"
@@ -31,3 +31,7 @@ CURL_OPTS = --disable --cookie /dev/null --globoff --show-error --user-agent "ho
 
 sizes: $(SIZE_FILES)
 
+
+deps: Brewfile .pre-commit-config.yaml
+	brew bundle --file=Brewfile --no-lock
+	pre-commit install
