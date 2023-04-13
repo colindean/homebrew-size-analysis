@@ -2,9 +2,11 @@ repos:
 - repo: https://github.com/mrtazz/checkmake.git
   rev: 0.2.2
   hooks:
-  - id: checkmake
+    # TODO: restore after https://github.com/pre-commit/pre-commit/issues/2722
+    # is fixed for real
+    # - id: checkmake
     # OR Use this hook to use a pre-installed checkmark executable
-    # -   id: checkmake-system
+  - id: checkmake-system
 - repo: https://github.com/executablebooks/mdformat
   rev: 0.7.16  # Use the ref you want to point at
   hooks:
