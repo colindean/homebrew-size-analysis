@@ -28,7 +28,7 @@ fd .size data | wc -l
 If the numbers are the same, you've got the data for the current `formula.json`.
 
 [^not_ghcr]: It's not ghcr.io rate-limiting me.
-My gateway is working fine but my ISP drops the upstream connection.
-It's probably some kind of DDOS protection at the DNS level.
-See notes.txt for ways I might get around this since curl does
-a DNS lookup every time it launches.
+    My gateway is working fine but my ISP drops the upstream connection.
+    It's probably some kind of DDOS protection at the DNS level.
+    See notes.txt for ways I might get around this since curl does
+    a DNS lookup every time it launches.
