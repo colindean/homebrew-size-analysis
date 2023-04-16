@@ -27,3 +27,5 @@ Each manifest/object has an `annotations` object that could gain a size somehow.
 
 This could reduce the number of requests from 1 per package-version-arch to 1 per package-version, 7 -> 1, reducing to 15% of the requests.
 That could reduce the retrieval time to something that reindexing is trivial.
+
+This could get added in https://github.com/Homebrew/brew/pull/15241.
