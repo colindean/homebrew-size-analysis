@@ -13,7 +13,7 @@ repos:
   - id: mdformat
     # Optionally add plugins
     additional_dependencies:
-    - mdformat-gfm
+    - mdformat-gfm>=1.0.0,<2
     - mdformat-footnote
     - mdformat-frontmatter
 - repo: https://github.com/pre-commit/pre-commit-hooks
