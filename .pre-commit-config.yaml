@@ -13,9 +13,9 @@ repos:
   - id: mdformat
     # Optionally add plugins
     additional_dependencies:
-    - mdformat-gfm>=1.0.0,<2
-    - mdformat-footnote
-    - mdformat-frontmatter
+    - mdformat-gfm>=1.0.0
+    - mdformat-footnote>=0.1.2
+    - mdformat-front-matters>=2.0.0
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v6.0.0  # Use the ref you want to point at
   hooks:
