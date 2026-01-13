@@ -1,5 +1,5 @@
 repos:
-- repo: https://github.com/mrtazz/checkmake.git
+- repo: https://github.com/checkmake/checkmake.git
   rev: v0.3.0
   hooks:
     # TODO: restore after https://github.com/pre-commit/pre-commit/issues/2722
